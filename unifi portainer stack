@@ -8,10 +8,10 @@ services:
       - PGID=1000
       - MEM_LIMIT=1024M #optional
     volumes:
-      - unifi-controller:/_data
-      - unifi-controller:/data
-      - unifi-controller:/_config
-      - unifi-controller:/config
+      - /path/to/data:/_data
+      - /path/to/data:/data
+      - /path/to/config:/_config
+      - /path/to/config:/config
     ports:
       - 3478:3478/udp
       - 10001:10001/udp
